@@ -1,0 +1,61 @@
+
+
+.current-date {
+  background-color: #e50000;
+  color: #000000;
+  border-radius: 50%;
+  padding: 10px;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 1;
+}
+
+.modal-fullscreen {
+  width: 100%;
+  padding: 5%;
+}
+
+.modal-dialog.modal-fullscreen {
+  max-width: 100%;
+  margin: 0;
+}
+
+.modal-content {
+  border-radius: 3;
+}
+
+
+
+.sql:hover {
+  background-color: #6d68f1;
+  color: #000000;
+  cursor: pointer;
+ 
+  
+}
+.git:hover {
+  background-color: #64eca5;
+  background-position: 100% 0;
+  color: #000000;
+  cursor: pointer;
+ }
+ .gitbranch:hover {
+  background-color: #64ece7;
+  background-position: 100% 0;
+  color: #000000;
+  cursor: pointer;
+ }
+
+.pirates:hover {
+  background-color: #edd54c;
+  background-position: 100% 0;
+  color: #000000;
+  cursor: pointer;
+ }
+
+ .calendar:hover {
+  background-color: #f47070;
+  background-position: 100% 0;
+  color: #000000;
+  cursor: pointer;
+ }
