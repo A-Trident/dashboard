@@ -66,7 +66,9 @@
                         <div
                           class="text-xs font-weight-bold text-uppercase mb-1"
                         >
-                          SQL Tutorial
+                          <h6>
+                            <i class="bi bi-filetype-sql"></i> SQL Tutorial
+                          </h6>
                         </div>
                       </div>
                       <!--  SQL Tutorial Modal -->
@@ -122,7 +124,7 @@
                         <div
                           class="text-xs font-weight-bold text-uppercase mb-1"
                         >
-                          Oh Shit, Git!?!
+                          <h6><i class="bi bi-git"></i> Oh Shit, Git!?!</h6>
                         </div>
                       </div>
                       <!--  SQL Tutorial Modal -->
@@ -178,7 +180,7 @@
                         <div
                           class="text-xs font-weight-bold text-uppercase mb-1"
                         >
-                          Git Branching
+                          <h6><i class="bi bi-github"></i> Git Branching</h6>
                         </div>
                       </div>
                       <!--  SQL Tutorial Modal -->
@@ -234,7 +236,10 @@
                         <div
                           class="text-xs font-weight-bold text-uppercase mb-1"
                         >
-                          Pirates Bay Proxy List
+                          <h6>
+                            <i class="bi bi-fullscreen"></i> Pirates Bay Proxy
+                            List
+                          </h6>
                         </div>
                       </div>
                       <!--  Pirates bay Modal -->
@@ -290,7 +295,9 @@
                         <div
                           class="text-xs font-weight-bold text-uppercase mb-1"
                         >
-                          <i class="bi bi-calendar-range"></i> Open Calendar
+                          <h6>
+                            <i class="bi bi-calendar-range"></i> Open Calendar
+                          </h6>
                         </div>
                       </div>
                       <!--  Calendar Modal -->
@@ -354,111 +361,632 @@
                 </div>
               </div>
 
-              <!--  Crypto Live Values -->
-              <div class="row">
-                <!--  Crypto Live Values -->
-                <div class="col-xl-8 col-lg-7">
+              <!-- //////////////////////////////////////////////////////// -->
+
+              <!-- Source Making -->
+              <div class="col-xl-3 col-md-6 mb-4">
+                <div
+                  class="card border-left-warning shadow h-100 py-2 sourcemaking"
+                >
                   <div
-                    class="card shadow mb-4"
-                    style="
-                      background-image: linear-gradient(
-                        to bottom right,
-                        #ecd6cb,
-                        #fbfbfb,
-                        #e1c1c1 90%
-                      );
-                    "
+                    class="card-body"
+                    data-toggle="modal"
+                    data-target="#myModal_sourcemaking"
                   >
-                    <!-- Card Header - Dropdown -->
-                    <div
-                      class="card-header py-3 d-flex flex-row align-items-center justify-content-between"
-                    >
-                      <h4
-                        class="m-0 font-weight-bold text-primary text-uppercase"
-                      >
-                        Crypto Live Values
-                      </h4>
-                    </div>
-                    <!-- Card Body -->
-                    <div class="container">
-                      <div class="row">
-                        <div class="col-md-6 offset-md-3">
-                          <form>
-                            <div class="form-group">
-                              <select
-                                class="form-control mt-3 text-black text-uppercase font-weight-bold"
-                                id="country"
-                              >
-                                <option value="USD">
-                                  United States Dollar (USD)
-                                </option>
-                                <option value="EUR">Euro (EUR)</option>
-                                <option value="GBP">
-                                  British Pound Sterling (GBP)
-                                </option>
-                                <option value="INR">Indian Rupee (INR)</option>
-                              </select>
-                            </div>
-                          </form>
+                    <div class="row no-gutters align-items-center">
+                      <div class="col mr-2">
+                        <div
+                          class="text-xs font-weight-bold text-uppercase mb-1"
+                        >
+                          <h6>
+                            <i class="bi bi-code-square"></i>
+                            Software architecture
+                          </h6>
                         </div>
                       </div>
-                      <div class="row">
-                        <div class="col-md-12">
-                          <div class="table-responsive">
-                            <table class="table table-bordered text-black">
-                              <thead>
-                                <tr>
-                                  <th>Name</th>
-                                  <th>Price</th>
-                                  <th>Market Cap</th>
-                                  <th>24h Volume</th>
-                                  <th>Circulating Supply</th>
-                                </tr>
-                              </thead>
-                              <tbody id="crypto-values"></tbody>
-                            </table>
+                      <!--  Calendar Modal -->
+                      <div
+                        class="modal fade"
+                        id="myModal_sourcemaking"
+                        tabindex="-1"
+                        role="dialog"
+                        aria-labelledby="myModalLabel"
+                        aria-hidden="true"
+                      >
+                        <div
+                          class="modal-dialog modal-fullscreen"
+                          role="document"
+                        >
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <button
+                                type="button"
+                                class="close"
+                                data-dismiss="modal"
+                                aria-label="Close"
+                              >
+                                <span aria-hidden="true">&times;</span>
+                              </button>
+                            </div>
+                            <div class="modal-body">
+                              <!-- Card Header - Dropdown -->
+                              <div
+                                class="card-header py-3 d-flex flex-row align-items-center justify-content-between"
+                              >
+                                <h6
+                                  class="m-0 font-weight-bold text-primary"
+                                  id="month"
+                                ></h6>
+                              </div>
+                              <!-- Card Body -->
+                              <div class="modal-body">
+                                <iframe
+                                  src="https://sourcemaking.com/"
+                                  frameborder="0"
+                                  style="width: 100%; height: 70vh"
+                                ></iframe>
+                              </div>
+                            </div>
                           </div>
+                        </div>
+                      </div>
+                      <!-- /////////////////////////////////////////////// -->
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Google Java Style Guide Making -->
+              <div class="col-xl-3 col-md-6 mb-4">
+                <div class="card border-left-success shadow h-100 py-2 google">
+                  <div
+                    class="card-body"
+                    data-toggle="modal"
+                    data-target="#myModal_google"
+                  >
+                    <div class="row no-gutters align-items-center">
+                      <div class="col mr-2">
+                        <div
+                          class="text-xs font-weight-bold text-uppercase mb-1"
+                        >
+                          <h6>
+                            <i class="bi bi-google"></i>
+                            Google Java Style Guide
+                          </h6>
+                        </div>
+                      </div>
+                      <!--  Google Java Style Guide Modal -->
+                      <div
+                        class="modal fade"
+                        id="myModal_google"
+                        tabindex="-1"
+                        role="dialog"
+                        aria-labelledby="myModalLabel"
+                        aria-hidden="true"
+                      >
+                        <div
+                          class="modal-dialog modal-fullscreen"
+                          role="document"
+                        >
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <button
+                                type="button"
+                                class="close"
+                                data-dismiss="modal"
+                                aria-label="Close"
+                              >
+                                <span aria-hidden="true">&times;</span>
+                              </button>
+                            </div>
+                            <div class="modal-body">
+                              <!-- Card Header - Dropdown -->
+                              <div
+                                class="card-header py-3 d-flex flex-row align-items-center justify-content-between"
+                              >
+                                <h6
+                                  class="m-0 font-weight-bold text-primary"
+                                  id="month"
+                                ></h6>
+                              </div>
+                              <!-- Card Body -->
+                              <div class="modal-body">
+                                <iframe
+                                  src="https://google.github.io/styleguide/javaguide.html"
+                                  frameborder="0"
+                                  style="width: 100%; height: 70vh"
+                                ></iframe>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- /////////////////////////////////////////////// -->
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Google Java Style Guide Making -->
+              <div class="col-xl-3 col-md-6 mb-4">
+                <div class="card border-left-info shadow h-100 py-2 googleC">
+                  <div
+                    class="card-body"
+                    data-toggle="modal"
+                    data-target="#myModal_googleC"
+                  >
+                    <div class="row no-gutters align-items-center">
+                      <div class="col mr-2">
+                        <div
+                          class="text-xs font-weight-bold text-uppercase mb-1"
+                        >
+                          <h6>
+                            <i class="bi bi-google"></i>
+                            Google Style C# Guide
+                          </h6>
+                        </div>
+                      </div>
+                      <!--  Google Java Style Guide Modal -->
+                      <div
+                        class="modal fade"
+                        id="myModal_googleC"
+                        tabindex="-1"
+                        role="dialog"
+                        aria-labelledby="myModalLabel"
+                        aria-hidden="true"
+                      >
+                        <div
+                          class="modal-dialog modal-fullscreen"
+                          role="document"
+                        >
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <button
+                                type="button"
+                                class="close"
+                                data-dismiss="modal"
+                                aria-label="Close"
+                              >
+                                <span aria-hidden="true">&times;</span>
+                              </button>
+                            </div>
+                            <div class="modal-body">
+                              <!-- Card Header - Dropdown -->
+                              <div
+                                class="card-header py-3 d-flex flex-row align-items-center justify-content-between"
+                              >
+                                <h6
+                                  class="m-0 font-weight-bold text-primary"
+                                  id="month"
+                                ></h6>
+                              </div>
+                              <!-- Card Body -->
+                              <div class="modal-body">
+                                <iframe
+                                  src="https://devdocs.io/"
+                                  frameborder="0"
+                                  style="width: 100%; height: 70vh"
+                                ></iframe>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- /////////////////////////////////////////////// -->
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- apiDoc Making -->
+              <div class="col-xl-3 col-md-6 mb-4">
+                <div class="card border-left-primary shadow h-100 py-2 apiDoc">
+                  <div
+                    class="card-body"
+                    data-toggle="modal"
+                    data-target="#myModal_apiDoc"
+                  >
+                    <div class="row no-gutters align-items-center">
+                      <div class="col mr-2">
+                        <div
+                          class="text-xs font-weight-bold text-uppercase mb-1"
+                        >
+                          <h6>
+                            <i class="bi bi-file-earmark-richtext"></i>
+                            API Documentation
+                          </h6>
+                        </div>
+                      </div>
+                      <!--  Google Java Style Guide Modal -->
+                      <div
+                        class="modal fade"
+                        id="myModal_apiDoc"
+                        tabindex="-1"
+                        role="dialog"
+                        aria-labelledby="myModalLabel"
+                        aria-hidden="true"
+                      >
+                        <div
+                          class="modal-dialog modal-fullscreen"
+                          role="document"
+                        >
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <button
+                                type="button"
+                                class="close"
+                                data-dismiss="modal"
+                                aria-label="Close"
+                              >
+                                <span aria-hidden="true">&times;</span>
+                              </button>
+                            </div>
+                            <div class="modal-body">
+                              <!-- Card Header - Dropdown -->
+                              <div
+                                class="card-header py-3 d-flex flex-row align-items-center justify-content-between"
+                              >
+                                <h6
+                                  class="m-0 font-weight-bold text-primary"
+                                  id="month"
+                                ></h6>
+                              </div>
+                              <!-- Card Body -->
+                              <div class="modal-body">
+                                <iframe
+                                  src="https://devdocs.io/"
+                                  frameborder="0"
+                                  style="width: 100%; height: 70vh"
+                                ></iframe>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- /////////////////////////////////////////////// -->
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- cheatsheets Making -->
+              <div class="col-xl-3 col-md-6 mb-4">
+                <div
+                  class="card border-left-danger shadow h-100 py-2 cheatsheets"
+                >
+                  <div
+                    class="card-body"
+                    data-toggle="modal"
+                    data-target="#myModal_cheatsheets"
+                  >
+                    <div class="row no-gutters align-items-center">
+                      <div class="col mr-2">
+                        <div
+                          class="text-xs font-weight-bold text-uppercase mb-1"
+                        >
+                          <h6>
+                            <i class="bi bi-file-check"></i>
+                            Rico's cheatsheets
+                          </h6>
+                        </div>
+                      </div>
+                      <!--  Google Java Style Guide Modal -->
+                      <div
+                        class="modal fade"
+                        id="myModal_cheatsheets"
+                        tabindex="-1"
+                        role="dialog"
+                        aria-labelledby="myModalLabel"
+                        aria-hidden="true"
+                      >
+                        <div
+                          class="modal-dialog modal-fullscreen"
+                          role="document"
+                        >
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <button
+                                type="button"
+                                class="close"
+                                data-dismiss="modal"
+                                aria-label="Close"
+                              >
+                                <span aria-hidden="true">&times;</span>
+                              </button>
+                            </div>
+                            <div class="modal-body">
+                              <!-- Card Header - Dropdown -->
+                              <div
+                                class="card-header py-3 d-flex flex-row align-items-center justify-content-between"
+                              >
+                                <h6
+                                  class="m-0 font-weight-bold text-primary"
+                                  id="month"
+                                ></h6>
+                              </div>
+                              <!-- Card Body -->
+                              <div class="modal-body">
+                                <iframe
+                                  src="https://devhints.io/"
+                                  frameborder="0"
+                                  style="width: 100%; height: 70vh"
+                                ></iframe>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- /////////////////////////////////////////////// -->
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- gitignore Making -->
+              <div class="col-xl-3 col-md-6 mb-4">
+                <div
+                  class="card border-left-warning shadow h-100 py-2 gitignore"
+                >
+                  <div
+                    class="card-body"
+                    data-toggle="modal"
+                    data-target="#myModal_gitignore"
+                  >
+                    <div class="row no-gutters align-items-center">
+                      <div class="col mr-2">
+                        <div
+                          class="text-xs font-weight-bold text-uppercase mb-1"
+                        >
+                          <h6>
+                            <i class="bi bi-github"></i>
+                            Create gitignore
+                          </h6>
+                        </div>
+                      </div>
+                      <!--  gitignore Modal -->
+                      <div
+                        class="modal fade"
+                        id="myModal_cheatsheets"
+                        tabindex="-1"
+                        role="dialog"
+                        aria-labelledby="myModalLabel"
+                        aria-hidden="true"
+                      >
+                        <div
+                          class="modal-dialog modal-fullscreen"
+                          role="document"
+                        >
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <button
+                                type="button"
+                                class="close"
+                                data-dismiss="modal"
+                                aria-label="Close"
+                              >
+                                <span aria-hidden="true">&times;</span>
+                              </button>
+                            </div>
+                            <div class="modal-body">
+                              <!-- Card Header - Dropdown -->
+                              <div
+                                class="card-header py-3 d-flex flex-row align-items-center justify-content-between"
+                              >
+                                <h6
+                                  class="m-0 font-weight-bold text-primary"
+                                  id="month"
+                                ></h6>
+                              </div>
+                              <!-- Card Body -->
+                              <div class="modal-body">
+                                <iframe
+                                  src="https://www.toptal.com/developers/gitignore"
+                                  frameborder="0"
+                                  style="width: 100%; height: 70vh"
+                                ></iframe>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- /////////////////////////////////////////////// -->
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- end  -->
+            </div>
+
+            <!--  Crypto Live Values -->
+            <div class="row">
+              <!--  Crypto Live Values -->
+              <div class="col-xl-8 col-lg-7">
+                <div
+                  class="card shadow mb-4"
+                  style="
+                    background-image: linear-gradient(
+                      to bottom right,
+                      #ecd6cb,
+                      #fbfbfb,
+                      #e1c1c1 90%
+                    );
+                  "
+                >
+                  <!-- Card Header - Dropdown -->
+                  <div
+                    class="card-header py-3 d-flex flex-row align-items-center justify-content-between"
+                  >
+                    <h4
+                      class="m-0 font-weight-bold text-primary text-uppercase"
+                    >
+                      <i class="bi bi-currency-bitcoin"></i>Crypto Currency
+                      Values <i class="bi bi-currency-bitcoin"></i>
+                    </h4>
+                  </div>
+                  <!-- Card Body -->
+                  <div class="container">
+                    <div class="row">
+                      <div class="col-md-6 offset-md-3">
+                        <form>
+                          <div class="form-group">
+                            <select
+                              class="form-control mt-3 text-black text-uppercase font-weight-bold"
+                              id="country"
+                            >
+                              <option value="USD">
+                                United States Dollar (USD)
+                              </option>
+                              <option value="EUR">Euro (EUR)</option>
+                              <option value="GBP">
+                                British Pound Sterling (GBP)
+                              </option>
+                              <option value="INR">Indian Rupee (INR)</option>
+                            </select>
+                          </div>
+                        </form>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-md-12">
+                        <div class="table-responsive">
+                          <table class="table table-bordered text-black">
+                            <thead>
+                              <tr>
+                                <th>Name</th>
+                                <th>Price</th>
+                                <th>Market Cap</th>
+                                <th>24h Volume</th>
+                                <th>Circulating Supply</th>
+                              </tr>
+                            </thead>
+                            <tbody id="crypto-values"></tbody>
+                          </table>
                         </div>
                       </div>
                     </div>
                   </div>
                 </div>
+              </div>
 
-                <!-- Calendar -->
-                <div class="col-xl-4 col-lg-7">
-                  <div class="card mb">
-                    <!-- Card Header - Dropdown -->
-                    <div
-                      class="card-header py-3 d-flex flex-row align-items-center justify-content-between"
+              <!-- Calendar -->
+              <div class="col-xl-4 col-lg-4">
+                <div class="card mb-3">
+                  <!-- Card Header - Dropdown -->
+                  <div
+                    class="card-header py-3 d-flex flex-row align-items-center justify-content-between"
+                  >
+                    <h6 class="m-0 font-weight-bold text-primary">
+                      <i class="bi bi-newspaper"></i> Tech News
+                    </h6>
+                  </div>
+                  <!-- Card Body -->
+                  <div class="card-body mr-1 pl-2">
+                    <iframe
+                      src="https://technews.acm.org/"
+                      frameborder="0"
+                      style="width: 100%; height: 100vh"
+                    ></iframe>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!--  IP CITY-->
+            <div class="row">
+              <!--  Crypto Live Values -->
+              <div class="col-xl-6 col-lg-7">
+                <div
+                  class="card shadow mb-4"
+                  style="
+                    background-image: linear-gradient(
+                      to bottom right,
+                      #ecd6cb,
+                      #fbfbfb,
+                      #e1c1c1 90%
+                    );
+                  "
+                >
+                  <!-- Card Header - Dropdown -->
+                  <div
+                    class="card-header py-3 d-flex flex-row align-items-center justify-content-between"
+                  >
+                    <h4
+                      class="m-0 font-weight-bold text-primary text-uppercase"
                     >
-                      <h6 class="m-0 font-weight-bold text-primary">
-                        Tech News
-                      </h6>
+                      <i class="bi bi-geo-alt-fill"></i>
+                      IP City
+                    </h4>
+                  </div>
+                  <!-- Card Body -->
+                  <div class="container">
+                    <div class="row">
+                      <div class="col-md-12">
+                        <div class="table-responsive">
+                          <iframe
+                            src="https://ip.city/"
+                            frameborder="0"
+                            style="width: 100%; height: 70vh"
+                          ></iframe>
+                        </div>
+                      </div>
                     </div>
-                    <!-- Card Body -->
-                    <div class="card-body mr-1 pl-2">
-                      <iframe
-                        src="https://technews.acm.org/"
-                        frameborder="0"
-                        style="width: 100%; height: 100vh"
-                      ></iframe>
+                  </div>
+                </div>
+              </div>
+
+              <!--  Crypto Live Values -->
+              <div class="col-xl-6 col-lg-4">
+                <div
+                  class="card shadow mb-4"
+                  style="
+                    background-image: linear-gradient(
+                      to bottom right,
+                      #ecd6cb,
+                      #fbfbfb,
+                      #e1c1c1 90%
+                    );
+                  "
+                >
+                  <!-- Card Header - Dropdown -->
+                  <div
+                    class="card-header py-3 d-flex flex-row align-items-center justify-content-between"
+                  >
+                    <h4
+                      class="m-0 font-weight-bold text-primary text-uppercase"
+                    >
+                      <i class="bi bi-graph-up-arrow"></i>
+                      Graph Online
+                    </h4>
+                  </div>
+                  <!-- Card Body -->
+                  <div class="container">
+                    <div class="row">
+                      <div class="col-md-12">
+                        <div class="table-responsive">
+                          <iframe
+                            src="https://graphonline.ru/en/"
+                            frameborder="0"
+                            style="width: 100%; height: 70vh"
+                          ></iframe>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-            <!-- /.container-fluid -->
           </div>
-          <!-- End of Main Content -->
+          <!-- /.container-fluid -->
         </div>
-        <!-- End of Content Wrapper -->
+        <!-- End of Main Content -->
       </div>
-      <!-- End of Page Wrapper -->
+      <!-- End of Content Wrapper -->
     </div>
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-      <script src="script.js"></script>
-   
+    <!-- End of Page Wrapper -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
   </body>
 </html>
