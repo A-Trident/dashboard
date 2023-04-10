@@ -35,17 +35,17 @@ function updateCryptoValues(country) {
         cryptoValuesHtml +=
           "<td>" +
           currencySymbol +
-          crypto.current_price.toLocaleString() +
+          (crypto.current_price < 1000 ? "<span class='red-text'>" + crypto.current_price.toLocaleString() + "</span>" : crypto.current_price.toLocaleString()) +
           "</td>";
         cryptoValuesHtml +=
           "<td>" +
           currencySymbol +
-          crypto.market_cap.toLocaleString() +
+          (crypto.market_cap < 1000 ? "<span class='red-text'>" + crypto.market_cap.toLocaleString() + "</span>" : crypto.market_cap.toLocaleString()) +
           "</td>";
         cryptoValuesHtml +=
           "<td>" +
           currencySymbol +
-          crypto.total_volume.toLocaleString() +
+          (crypto.total_volume < 1000 ? "<span class='red-text'>" + crypto.total_volume.toLocaleString() + "</span>" : crypto.total_volume.toLocaleString()) +
           "</td>";
         cryptoValuesHtml +=
           "<td>" +
