@@ -26,76 +26,37 @@
 
 
 
-.sql:hover {
+.primary:hover {
   background-color: #6d68f1;
   color: #000000;
   cursor: pointer;
   
 }
-.git:hover {
+.success:hover {
   background-color: #64eca5;
   background-position: 100% 0;
   color: #000000;
   cursor: pointer;
  }
- .gitbranch:hover {
+ .info:hover {
   background-color: #64ece7;
   background-position: 100% 0;
   color: #000000;
   cursor: pointer;
  }
 
-.pirates:hover {
+.warning:hover {
   background-color: #edd54c;
   background-position: 100% 0;
   color: #000000;
   cursor: pointer;
  }
 
- .calendar:hover {
+ .danger:hover {
   background-color: #f47070;
   background-position: 100% 0;
   color: #000000;
   cursor: pointer;
  }
 
- .sourcemaking:hover {
-  background-color: #edd54c;
-  background-position: 100% 0;
-  color: #000000;
-  cursor: pointer;
- }
-
- .google:hover {
-  background-color: #64eca5;
-  background-position: 100% 0;
-  color: #000000;
-  cursor: pointer;
- }
-
- .googleC:hover {
-  background-color: #64ece7;
-  background-position: 100% 0;
-  color: #000000;
-  cursor: pointer;
- }
-
- .apiDoc:hover {
-  background-color: #6d68f1;
-  color: #000000;
-  cursor: pointer;
-  
-}
-
-.cheatsheets:hover {
-  background-color: #f47070;
-  background-position: 100% 0;
-  color: #000000;
-  cursor: pointer;
- }
- .gitignore:hover {
-  background-color: #edd54c;
-  background-position: 100% 0;
-  color: #000000;
-  cursor: pointer;
- }
+ 
