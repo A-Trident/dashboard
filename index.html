@@ -2,118 +2,60 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
     />
-    <meta name="description" content="" />
-    <meta name="author" content="" />
-
+    <link
+      href="https://getbootstrap.com/docs/5.2/assets/css/docs.css"
+      rel="stylesheet"
+    />
     <title>INFINITY VOID</title>
-
-    <!-- Custom fonts for this template-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
     <link
       rel="stylesheet"
-      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-    />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css"
-    />
-
-    <link
-      href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
-      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css"
+      integrity="sha384-b6lVK+yci+bfDmaY1u0zE8YYJt0TZxLEAFyYSLHId4xoVvsrQu3INevFKo+Xir8e"
+      crossorigin="anonymous"
     />
 
     <!-- Custom styles for this template-->
     <link href="dashboard.css" rel="stylesheet" />
     <link href="styles.css" rel="stylesheet" />
+
+    <script src="script.js"></script>
   </head>
+  <body class="p-3 m-0 border-0 bd-example" id="page-top">
+    <!-- Example Code -->
 
-  <body id="page-top">
-    <!-- Page Wrapper -->
-    <div id="wrapper">
-      <!-- Content Wrapper -->
-      <div id="content-wrapper" class="d-flex flex-column">
-        <!-- Main Content -->
-        <div id="content">
-          <!-- Begin Page Content -->
-          <div class="container-fluid">
-            <!-- Page Heading -->
-            <div
-              class="d-sm-flex align-items-center justify-content-between mb-4"
-            >
-              <h1 class="h3 mt-3 mb-0 text-gray-800">Dashboard</h1>
-            </div>
-
+    <div class="accordion" id="accordionExample">
+      <!-- 1st Accordion START -->
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingOne">
+          <button
+            class="accordion-button"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#collapseOne"
+            aria-expanded="true"
+            aria-controls="collapseOne"
+          >
+            Developer Tools
+          </button>
+        </h2>
+        <div
+          id="collapseOne"
+          class="accordion-collapse collapse show"
+          aria-labelledby="headingOne"
+          data-bs-parent="#accordionExample"
+        >
+          <div class="accordion-body">
             <!-- Content Row -->
             <div class="row">
-              <!-- SQL Tutorial -->
-              <div class="col-xl-3 col-md-6 mb-4">
-                <div class="card border-left-primary shadow h-100 py-2 sql">
-                  <div
-                    class="card-body"
-                    data-toggle="modal"
-                    data-target="#myModal_sql"
-                  >
-                    <div class="row no-gutters align-items-center">
-                      <div class="col mr-2">
-                        <div
-                          class="text-xs font-weight-bold text-uppercase mb-1"
-                        >
-                          <h6>
-                            <i class="bi bi-filetype-sql"></i> SQL Tutorial
-                          </h6>
-                        </div>
-                      </div>
-                      <!--  SQL Tutorial Modal -->
-                      <div
-                        class="modal fade"
-                        id="myModal_sql"
-                        tabindex="-1"
-                        role="dialog"
-                        aria-labelledby="myModalLabel"
-                        aria-hidden="true"
-                      >
-                        <div
-                          class="modal-dialog modal-fullscreen"
-                          role="document"
-                        >
-                          <div class="modal-content">
-                            <div class="modal-header">
-                              <button
-                                type="button"
-                                class="close"
-                                data-dismiss="modal"
-                                aria-label="Close"
-                              >
-                                <span aria-hidden="true">&times;</span>
-                              </button>
-                            </div>
-                            <div class="modal-body">
-                              <iframe
-                                src="https://sqlzoo.net/wiki/SQL_Tutorial"
-                                frameborder="0"
-                                style="width: 100%; height: 70vh"
-                              ></iframe>
-                            </div>
-                          </div>
-                        </div>
-                        <!-- /////////////////////////////////////////////// -->
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
               <!-- Ohh sit git  -->
               <div class="col-xl-3 col-md-6 mb-4">
-                <div class="card border-left-success shadow h-100 py-2 git">
+                <div class="card border-left-success shadow h-100 py-2 success">
                   <div
                     class="card-body"
                     data-toggle="modal"
@@ -160,16 +102,15 @@
                             </div>
                           </div>
                         </div>
-                        <!-- /////////////////////////////////////////////// -->
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
-
+              <!-- /////////////////////////////////////////////// -->
               <!-- Gitbranching Card Example -->
               <div class="col-xl-3 col-md-6 mb-4">
-                <div class="card border-left-info shadow h-100 py-2 gitbranch">
+                <div class="card border-left-info shadow h-100 py-2 info">
                   <div
                     class="card-body"
                     data-toggle="modal"
@@ -216,16 +157,15 @@
                             </div>
                           </div>
                         </div>
-                        <!-- /////////////////////////////////////////////// -->
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
-
+              <!-- /////////////////////////////////////////////// -->
               <!-- Pirates Bay Card Example -->
               <div class="col-xl-3 col-md-6 mb-4">
-                <div class="card border-left-warning shadow h-100 py-2 pirates">
+                <div class="card border-left-warning shadow h-100 py-2 warning">
                   <div
                     class="card-body"
                     data-toggle="modal"
@@ -275,16 +215,15 @@
                             </div>
                           </div>
                         </div>
-                        <!-- /////////////////////////////////////////////// -->
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
-
+              <!-- /////////////////////////////////////////////// -->
               <!-- Calendar Card Example -->
               <div class="col-xl-3 col-md-6 mb-4">
-                <div class="card border-left-danger shadow h-100 py-2 calendar">
+                <div class="card border-left-danger shadow h-100 py-2 danger">
                   <div
                     class="card-body"
                     data-toggle="modal"
@@ -354,7 +293,6 @@
                             </div>
                           </div>
                         </div>
-                        <!-- /////////////////////////////////////////////// -->
                       </div>
                     </div>
                   </div>
@@ -365,9 +303,7 @@
 
               <!-- Source Making -->
               <div class="col-xl-3 col-md-6 mb-4">
-                <div
-                  class="card border-left-warning shadow h-100 py-2 sourcemaking"
-                >
+                <div class="card border-left-warning shadow h-100 py-2 warning">
                   <div
                     class="card-body"
                     data-toggle="modal"
@@ -430,229 +366,14 @@
                           </div>
                         </div>
                       </div>
-                      <!-- /////////////////////////////////////////////// -->
                     </div>
                   </div>
                 </div>
               </div>
-
-              <!-- Google Java Style Guide Making -->
-              <div class="col-xl-3 col-md-6 mb-4">
-                <div class="card border-left-success shadow h-100 py-2 google">
-                  <div
-                    class="card-body"
-                    data-toggle="modal"
-                    data-target="#myModal_google"
-                  >
-                    <div class="row no-gutters align-items-center">
-                      <div class="col mr-2">
-                        <div
-                          class="text-xs font-weight-bold text-uppercase mb-1"
-                        >
-                          <h6>
-                            <i class="bi bi-google"></i>
-                            Google Java Style Guide
-                          </h6>
-                        </div>
-                      </div>
-                      <!--  Google Java Style Guide Modal -->
-                      <div
-                        class="modal fade"
-                        id="myModal_google"
-                        tabindex="-1"
-                        role="dialog"
-                        aria-labelledby="myModalLabel"
-                        aria-hidden="true"
-                      >
-                        <div
-                          class="modal-dialog modal-fullscreen"
-                          role="document"
-                        >
-                          <div class="modal-content">
-                            <div class="modal-header">
-                              <button
-                                type="button"
-                                class="close"
-                                data-dismiss="modal"
-                                aria-label="Close"
-                              >
-                                <span aria-hidden="true">&times;</span>
-                              </button>
-                            </div>
-                            <div class="modal-body">
-                              <!-- Card Header - Dropdown -->
-                              <div
-                                class="card-header py-3 d-flex flex-row align-items-center justify-content-between"
-                              >
-                                <h6
-                                  class="m-0 font-weight-bold text-primary"
-                                  id="month"
-                                ></h6>
-                              </div>
-                              <!-- Card Body -->
-                              <div class="modal-body">
-                                <iframe
-                                  src="https://google.github.io/styleguide/javaguide.html"
-                                  frameborder="0"
-                                  style="width: 100%; height: 70vh"
-                                ></iframe>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <!-- /////////////////////////////////////////////// -->
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <!-- Google Java Style Guide Making -->
-              <div class="col-xl-3 col-md-6 mb-4">
-                <div class="card border-left-info shadow h-100 py-2 googleC">
-                  <div
-                    class="card-body"
-                    data-toggle="modal"
-                    data-target="#myModal_googleC"
-                  >
-                    <div class="row no-gutters align-items-center">
-                      <div class="col mr-2">
-                        <div
-                          class="text-xs font-weight-bold text-uppercase mb-1"
-                        >
-                          <h6>
-                            <i class="bi bi-google"></i>
-                            Google Style C# Guide
-                          </h6>
-                        </div>
-                      </div>
-                      <!--  Google Java Style Guide Modal -->
-                      <div
-                        class="modal fade"
-                        id="myModal_googleC"
-                        tabindex="-1"
-                        role="dialog"
-                        aria-labelledby="myModalLabel"
-                        aria-hidden="true"
-                      >
-                        <div
-                          class="modal-dialog modal-fullscreen"
-                          role="document"
-                        >
-                          <div class="modal-content">
-                            <div class="modal-header">
-                              <button
-                                type="button"
-                                class="close"
-                                data-dismiss="modal"
-                                aria-label="Close"
-                              >
-                                <span aria-hidden="true">&times;</span>
-                              </button>
-                            </div>
-                            <div class="modal-body">
-                              <!-- Card Header - Dropdown -->
-                              <div
-                                class="card-header py-3 d-flex flex-row align-items-center justify-content-between"
-                              >
-                                <h6
-                                  class="m-0 font-weight-bold text-primary"
-                                  id="month"
-                                ></h6>
-                              </div>
-                              <!-- Card Body -->
-                              <div class="modal-body">
-                                <iframe
-                                  src="https://google.github.io/styleguide/csharp-style.html"
-                                  frameborder="0"
-                                  style="width: 100%; height: 70vh"
-                                ></iframe>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <!-- /////////////////////////////////////////////// -->
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!-- apiDoc Making -->
-              <div class="col-xl-3 col-md-6 mb-4">
-                <div class="card border-left-primary shadow h-100 py-2 apiDoc">
-                  <div
-                    class="card-body"
-                    data-toggle="modal"
-                    data-target="#myModal_apiDoc"
-                  >
-                    <div class="row no-gutters align-items-center">
-                      <div class="col mr-2">
-                        <div
-                          class="text-xs font-weight-bold text-uppercase mb-1"
-                        >
-                          <h6>
-                            <i class="bi bi-file-earmark-richtext"></i>
-                            API Documentation
-                          </h6>
-                        </div>
-                      </div>
-                      <!--  Google Java Style Guide Modal -->
-                      <div
-                        class="modal fade"
-                        id="myModal_apiDoc"
-                        tabindex="-1"
-                        role="dialog"
-                        aria-labelledby="myModalLabel"
-                        aria-hidden="true"
-                      >
-                        <div
-                          class="modal-dialog modal-fullscreen"
-                          role="document"
-                        >
-                          <div class="modal-content">
-                            <div class="modal-header">
-                              <button
-                                type="button"
-                                class="close"
-                                data-dismiss="modal"
-                                aria-label="Close"
-                              >
-                                <span aria-hidden="true">&times;</span>
-                              </button>
-                            </div>
-                            <div class="modal-body">
-                              <!-- Card Header - Dropdown -->
-                              <div
-                                class="card-header py-3 d-flex flex-row align-items-center justify-content-between"
-                              >
-                                <h6
-                                  class="m-0 font-weight-bold text-primary"
-                                  id="month"
-                                ></h6>
-                              </div>
-                              <!-- Card Body -->
-                              <div class="modal-body">
-                                <iframe
-                                  src="https://devdocs.io/"
-                                  frameborder="0"
-                                  style="width: 100%; height: 70vh"
-                                ></iframe>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <!-- /////////////////////////////////////////////// -->
-                    </div>
-                  </div>
-                </div>
-              </div>
-
+              <!-- /////////////////////////////////////////////// -->
               <!-- cheatsheets Making -->
               <div class="col-xl-3 col-md-6 mb-4">
-                <div
-                  class="card border-left-danger shadow h-100 py-2 cheatsheets"
-                >
+                <div class="card border-left-danger shadow h-100 py-2 danger">
                   <div
                     class="card-body"
                     data-toggle="modal"
@@ -715,17 +436,14 @@
                           </div>
                         </div>
                       </div>
-                      <!-- /////////////////////////////////////////////// -->
                     </div>
                   </div>
                 </div>
               </div>
-
+              <!-- /////////////////////////////////////////////// -->
               <!-- gitignore Making -->
               <div class="col-xl-3 col-md-6 mb-4">
-                <div
-                  class="card border-left-warning shadow h-100 py-2 gitignore"
-                >
+                <div class="card border-left-warning shadow h-100 py-2 warning">
                   <div
                     class="card-body"
                     data-toggle="modal"
@@ -788,16 +506,322 @@
                           </div>
                         </div>
                       </div>
-                      <!-- /////////////////////////////////////////////// -->
                     </div>
                   </div>
                 </div>
               </div>
+              <!-- /////////////////////////////////////////////// -->
 
+              <!-- Create Graph online -->
+              <div class="col-xl-3 col-md-6 mb-4">
+                <div class="card border-left-success shadow h-100 py-2 success">
+                  <div
+                    class="card-body"
+                    data-toggle="modal"
+                    data-target="#myModal_graphonline"
+                  >
+                    <div class="row no-gutters align-items-center">
+                      <div class="col mr-2">
+                        <div
+                          class="text-xs font-weight-bold text-uppercase mb-1"
+                        >
+                          <h6>
+                            <i class="bi bi-graph-up-arrow"></i>
+                            Create graph and find the shortest path
+                          </h6>
+                        </div>
+                      </div>
+                      <!--  gitignore Modal -->
+                      <div
+                        class="modal fade"
+                        id="myModal_graphonline"
+                        tabindex="-1"
+                        role="dialog"
+                        aria-labelledby="myModalLabel"
+                        aria-hidden="true"
+                      >
+                        <div
+                          class="modal-dialog modal-fullscreen"
+                          role="document"
+                        >
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <button
+                                type="button"
+                                class="close"
+                                data-dismiss="modal"
+                                aria-label="Close"
+                              >
+                                <span aria-hidden="true">&times;</span>
+                              </button>
+                            </div>
+                            <div class="modal-body">
+                              <!-- Card Header - Dropdown -->
+                              <div
+                                class="card-header py-3 d-flex flex-row align-items-center justify-content-between"
+                              >
+                                <h6
+                                  class="m-0 font-weight-bold text-primary"
+                                  id="month"
+                                ></h6>
+                              </div>
+                              <!-- Card Body -->
+                              <div class="modal-body">
+                                <iframe
+                                  src="https://graphonline.ru/en/"
+                                  frameborder="0"
+                                  style="width: 100%; height: 70vh"
+                                ></iframe>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- /////////////////////////////////////////////// -->
+
+              <!-- free-fordev online -->
+              <div class="col-xl-3 col-md-6 mb-4">
+                <div class="card border-left-success shadow h-100 py-2 success">
+                  <div
+                    class="card-body"
+                    data-toggle="modal"
+                    data-target="#myModal_free-fordev"
+                  >
+                    <div class="row no-gutters align-items-center">
+                      <div class="col mr-2">
+                        <div
+                          class="text-xs font-weight-bold text-uppercase mb-1"
+                        >
+                          <h6>
+                            <i class="bi bi-gear-wide-connected"></i>
+                            free-fordev
+                          </h6>
+                        </div>
+                      </div>
+                      <!--  free-fordev Modal -->
+                      <div
+                        class="modal fade"
+                        id="myModal_free-fordev"
+                        tabindex="-1"
+                        role="dialog"
+                        aria-labelledby="myModalLabel"
+                        aria-hidden="true"
+                      >
+                        <div
+                          class="modal-dialog modal-fullscreen"
+                          role="document"
+                        >
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <button
+                                type="button"
+                                class="close"
+                                data-dismiss="modal"
+                                aria-label="Close"
+                              >
+                                <span aria-hidden="true">&times;</span>
+                              </button>
+                            </div>
+                            <div class="modal-body">
+                              <!-- Card Header - Dropdown -->
+                              <div
+                                class="card-header py-3 d-flex flex-row align-items-center justify-content-between"
+                              >
+                                <h6
+                                  class="m-0 font-weight-bold text-primary"
+                                  id="month"
+                                ></h6>
+                              </div>
+                              <!-- Card Body -->
+                              <div class="modal-body">
+                                <iframe
+                                  src="https://free-for.dev/#/?id=free-fordev"
+                                  frameborder="0"
+                                  style="width: 100%; height: 70vh"
+                                ></iframe>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- /////////////////////////////////////////////// -->
+              <!-- Track Dev Updates -->
+              <div class="col-xl-3 col-md-6 mb-4">
+                <div class="card border-left-warning shadow h-100 py-2 warning">
+                  <div
+                    class="card-body"
+                    data-toggle="modal"
+                    data-target="#myModal_trackawesomelist"
+                  >
+                    <div class="row no-gutters align-items-center">
+                      <div class="col mr-2">
+                        <div
+                          class="text-xs font-weight-bold text-uppercase mb-1"
+                        >
+                          <h6>
+                            <i class="bi bi-nut-fill"></i>
+                            Track Dev Updates
+                          </h6>
+                        </div>
+                      </div>
+                      <!--  trackawesomelist Modal -->
+                      <div
+                        class="modal fade"
+                        id="myModal_trackawesomelist"
+                        tabindex="-1"
+                        role="dialog"
+                        aria-labelledby="myModalLabel"
+                        aria-hidden="true"
+                      >
+                        <div
+                          class="modal-dialog modal-fullscreen"
+                          role="document"
+                        >
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <button
+                                type="button"
+                                class="close"
+                                data-dismiss="modal"
+                                aria-label="Close"
+                              >
+                                <span aria-hidden="true">&times;</span>
+                              </button>
+                            </div>
+                            <div class="modal-body">
+                              <!-- Card Header - Dropdown -->
+                              <div
+                                class="card-header py-3 d-flex flex-row align-items-center justify-content-between"
+                              >
+                                <h6
+                                  class="m-0 font-weight-bold text-primary"
+                                  id="month"
+                                ></h6>
+                              </div>
+                              <!-- Card Body -->
+                              <div class="modal-body">
+                                <iframe
+                                  src="https://www.trackawesomelist.com/ripienaar/free-for-dev/"
+                                  frameborder="0"
+                                  style="width: 100%; height: 70vh"
+                                ></iframe>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- /////////////////////////////////////////////// -->
+
+              <!-- Online regex tester and debugger -->
+              <div class="col-xl-3 col-md-6 mb-4">
+                <div class="card border-left-warning shadow h-100 py-2 warning">
+                  <div
+                    class="card-body"
+                    data-toggle="modal"
+                    data-target="#myModal_regexr"
+                  >
+                    <div class="row no-gutters align-items-center">
+                      <div class="col mr-2">
+                        <div
+                          class="text-xs font-weight-bold text-uppercase mb-1"
+                        >
+                          <h6>
+                            <i class="bi bi-bug-fill"></i>
+                            Regex tester and debugger
+                          </h6>
+                        </div>
+                      </div>
+                      <!--  regexr Modal -->
+                      <div
+                        class="modal fade"
+                        id="myModal_regexr"
+                        tabindex="-1"
+                        role="dialog"
+                        aria-labelledby="myModalLabel"
+                        aria-hidden="true"
+                      >
+                        <div
+                          class="modal-dialog modal-fullscreen"
+                          role="document"
+                        >
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <button
+                                type="button"
+                                class="close"
+                                data-dismiss="modal"
+                                aria-label="Close"
+                              >
+                                <span aria-hidden="true">&times;</span>
+                              </button>
+                            </div>
+                            <div class="modal-body">
+                              <!-- Card Header - Dropdown -->
+                              <div
+                                class="card-header py-3 d-flex flex-row align-items-center justify-content-between"
+                              >
+                                <h6
+                                  class="m-0 font-weight-bold text-primary"
+                                  id="month"
+                                ></h6>
+                              </div>
+                              <!-- Card Body -->
+                              <div class="modal-body">
+                                <iframe
+                                  src="https://n-o-d-e.net/"
+                                  frameborder="0"
+                                  style="width: 100%; height: 70vh"
+                                ></iframe>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- /////////////////////////////////////////////// -->
               <!-- end  -->
             </div>
+          </div>
+        </div>
+      </div>
+      <!-- 1st Accordion END -->
 
-            <!--  Crypto Live Values -->
+      <!-- 2nd Accordion START -->
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingTwo">
+          <button
+            class="accordion-button collapsed"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#collapseTwo"
+            aria-expanded="false"
+            aria-controls="collapseTwo"
+          >
+            Crypto News
+          </button>
+        </h2>
+        <div
+          id="collapseTwo"
+          class="accordion-collapse collapse"
+          aria-labelledby="headingTwo"
+          data-bs-parent="#accordionExample"
+        >
+          <div class="accordion-body">
             <div class="row">
               <!--  Crypto Live Values -->
               <div class="col-xl-8 col-lg-7">
@@ -820,7 +844,7 @@
                       class="m-0 font-weight-bold text-primary text-uppercase"
                     >
                       <i class="bi bi-currency-bitcoin"></i>Crypto Currency
-                      Values <i class="bi bi-currency-bitcoin"></i>
+                      Values <i class="bi bi-currency-exchange"></i>
                     </h4>
                   </div>
                   <!-- Card Body -->
@@ -876,118 +900,1935 @@
                     class="card-header py-3 d-flex flex-row align-items-center justify-content-between"
                   >
                     <h6 class="m-0 font-weight-bold text-primary">
-                      <i class="bi bi-newspaper"></i> Tech News
+                      <i class="bi bi-newspaper"></i> News
                     </h6>
                   </div>
                   <!-- Card Body -->
                   <div class="card-body mr-1 pl-2">
-                    <iframe
-                      src="https://technews.acm.org/"
-                      frameborder="0"
-                      style="width: 100%; height: 100vh"
-                    ></iframe>
+                    <!-- \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ -->
+                    <div
+                      class="card border-left-primary shadow h-100 py-2 primary"
+                    >
+                      <div
+                        class="card-body"
+                        data-toggle="modal"
+                        data-target="#myModal_TechNews"
+                      >
+                        <div class="row no-gutters align-items-center">
+                          <div class="col mr-2">
+                            <div
+                              class="text-xs font-weight-bold text-uppercase mb-1"
+                            >
+                              <h6>
+                                <i class="bi bi-node-plus-fill"></i> ACM
+                                TechNews
+                              </h6>
+                            </div>
+                          </div>
+                          <!--  ACM TechNews -->
+                          <div
+                            class="modal fade"
+                            id="myModal_TechNews"
+                            tabindex="-1"
+                            role="dialog"
+                            aria-labelledby="myModalLabel"
+                            aria-hidden="true"
+                          >
+                            <div class="modal-dialog" role="document">
+                              <div class="modal-content">
+                                <div class="modal-header">
+                                  <button
+                                    type="button"
+                                    class="close"
+                                    data-dismiss="modal"
+                                    aria-label="Close"
+                                  >
+                                    <span aria-hidden="true">&times;</span>
+                                  </button>
+                                </div>
+                                <div class="modal-body">
+                                  <iframe
+                                    src="https://technews.acm.org/"
+                                    frameborder="0"
+                                    style="width: 100%; height: 70vh"
+                                  ></iframe>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- ///////////////////////////////////////////////////////////////// -->
+                    <br />
+                    <!-- \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ -->
+                    <div
+                      class="card border-left-success shadow h-100 py-2 success"
+                    >
+                      <div
+                        class="card-body"
+                        data-toggle="modal"
+                        data-target="#myModal_stratechery"
+                      >
+                        <div class="row no-gutters align-items-center">
+                          <div class="col mr-2">
+                            <div
+                              class="text-xs font-weight-bold text-uppercase mb-1"
+                            >
+                              <h6>
+                                <i class="bi bi-node-plus-fill"></i> Stratechery
+                              </h6>
+                            </div>
+                          </div>
+                          <!--  Stratechery -->
+                          <div
+                            class="modal fade"
+                            id="myModal_stratechery"
+                            tabindex="-1"
+                            role="dialog"
+                            aria-labelledby="myModalLabel"
+                            aria-hidden="true"
+                          >
+                            <div class="modal-dialog" role="document">
+                              <div class="modal-content">
+                                <div class="modal-header">
+                                  <button
+                                    type="button"
+                                    class="close"
+                                    data-dismiss="modal"
+                                    aria-label="Close"
+                                  >
+                                    <span aria-hidden="true">&times;</span>
+                                  </button>
+                                </div>
+                                <div class="modal-body">
+                                  <iframe
+                                    src="https://stratechery.com/"
+                                    frameborder="0"
+                                    style="width: 100%; height: 70vh"
+                                  ></iframe>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- ///////////////////////////////////////////////////////////////// -->
+                    <br />
+                    <!-- \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ -->
+                    <div
+                      class="card border-left-danger shadow h-100 py-2 danger"
+                    >
+                      <div
+                        class="card-body"
+                        data-toggle="modal"
+                        data-target="#myModal_cnet"
+                      >
+                        <div class="row no-gutters align-items-center">
+                          <div class="col mr-2">
+                            <div
+                              class="text-xs font-weight-bold text-uppercase mb-1"
+                            >
+                              <h6>
+                                <i class="bi bi-node-plus-fill"></i> CNET NEWS
+                              </h6>
+                            </div>
+                          </div>
+                          <!--  CNET NEWS -->
+                          <div
+                            class="modal fade"
+                            id="myModal_cnet"
+                            tabindex="-1"
+                            role="dialog"
+                            aria-labelledby="myModalLabel"
+                            aria-hidden="true"
+                          >
+                            <div class="modal-dialog modal-fullscreen
+                            role="document">
+                            <div class="modal-content">
+                              <div class="modal-header">
+                                <button
+                                  type="button"
+                                  class="close"
+                                  data-dismiss="modal"
+                                  aria-label="Close"
+                                >
+                                  <span aria-hidden="true">&times;</span>
+                                </button>
+                              </div>
+                              <div class="modal-body">
+                                <iframe
+                                  src="https://www.cnet.com/news/"
+                                  frameborder="0"
+                                  style="width: 100%; height: 70vh"
+                                ></iframe>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
                   </div>
+                  <!-- ///////////////////////////////////////////////////////////////// -->
+                  <br />
+                  <!-- \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ -->
+                  <div
+                    class="card border-left-warning shadow h-100 py-2 warning"
+                  >
+                    <div
+                      class="card-body"
+                      data-toggle="modal"
+                      data-target="#myModal_hackaday"
+                    >
+                      <div class="row no-gutters align-items-center">
+                        <div class="col mr-2">
+                          <div
+                            class="text-xs font-weight-bold text-uppercase mb-1"
+                          >
+                            <h6>
+                              <i class="bi bi-node-plus-fill"></i> hackaday NEWS
+                            </h6>
+                          </div>
+                        </div>
+                        <!--  hackaday NEWS -->
+                        <div
+                          class="modal fade"
+                          id="myModal_hackaday"
+                          tabindex="-1"
+                          role="dialog"
+                          aria-labelledby="myModalLabel"
+                          aria-hidden="true"
+                        >
+                          <div
+                            class="modal-dialog modal-fullscreen"
+                            role="document"
+                          >
+                            <div class="modal-content">
+                              <div class="modal-header">
+                                <button
+                                  type="button"
+                                  class="close"
+                                  data-dismiss="modal"
+                                  aria-label="Close"
+                                >
+                                  <span aria-hidden="true">&times;</span>
+                                </button>
+                              </div>
+                              <div class="modal-body">
+                                <iframe
+                                  src="https://hackaday.com/"
+                                  frameborder="0"
+                                  style="width: 100%; height: 70vh"
+                                ></iframe>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- ///////////////////////////////////////////////////////////////// -->
+
+                  <br />
+                  <!-- \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ -->
+                  <div class="card border-left-info shadow h-100 py-2 info">
+                    <div
+                      class="card-body"
+                      data-toggle="modal"
+                      data-target="#myModal_rekt"
+                    >
+                      <div class="row no-gutters align-items-center">
+                        <div class="col mr-2">
+                          <div
+                            class="text-xs font-weight-bold text-uppercase mb-1"
+                          >
+                            <h6>
+                              <i class="bi bi-node-plus-fill"></i> rekt NEWS
+                            </h6>
+                          </div>
+                        </div>
+                        <!--  rekt NEWS -->
+                        <div
+                          class="modal fade"
+                          id="myModal_rekt"
+                          tabindex="-1"
+                          role="dialog"
+                          aria-labelledby="myModalLabel"
+                          aria-hidden="true"
+                        >
+                          <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                              <div class="modal-header">
+                                <button
+                                  type="button"
+                                  class="close"
+                                  data-dismiss="modal"
+                                  aria-label="Close"
+                                >
+                                  <span aria-hidden="true">&times;</span>
+                                </button>
+                              </div>
+                              <div class="modal-body">
+                                <iframe
+                                  src="https://rekt.news/"
+                                  frameborder="0"
+                                  style="width: 100%; height: 70vh"
+                                ></iframe>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- ///////////////////////////////////////////////////////////////// -->
                 </div>
               </div>
             </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- 2nd Accordion END -->
 
-            <!--  IP CITY-->
-            <div class="row">
-              <!--  Crypto Live Values -->
-              <div class="col-xl-6 col-lg-7">
+    <!-- 3rd Accordion START -->
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="headingThree">
+        <button
+          class="accordion-button collapsed"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#collapseThree"
+          aria-expanded="false"
+          aria-controls="collapseThree"
+        >
+          Developer Instructor
+        </button>
+      </h2>
+      <div
+        id="collapseThree"
+        class="accordion-collapse collapse"
+        aria-labelledby="headingThree"
+        data-bs-parent="#accordionExample"
+      >
+        <div class="accordion-body">
+          <!-- Content Row -->
+          <div class="row">
+            <!-- devrant Tutorial -->
+            <div class="col-xl-3 col-md-6 mb-4">
+              <div class="card border-left-primary shadow h-100 py-2 primary">
                 <div
-                  class="card shadow mb-4"
-                  style="
-                    background-image: linear-gradient(
-                      to bottom right,
-                      #ecd6cb,
-                      #fbfbfb,
-                      #e1c1c1 90%
-                    );
-                  "
+                  class="card-body"
+                  data-toggle="modal"
+                  data-target="#myModal_devrant"
                 >
-                  <!-- Card Header - Dropdown -->
-                  <div
-                    class="card-header py-3 d-flex flex-row align-items-center justify-content-between"
-                  >
-                    <h4
-                      class="m-0 font-weight-bold text-primary text-uppercase"
+                  <div class="row no-gutters align-items-center">
+                    <div class="col mr-2">
+                      <div class="text-xs font-weight-bold text-uppercase mb-1">
+                        <h6><i class="bi bi-code-square"></i> devrant</h6>
+                      </div>
+                    </div>
+                    <!--  devrant -->
+                    <div
+                      class="modal fade"
+                      id="myModal_devrant"
+                      tabindex="-1"
+                      role="dialog"
+                      aria-labelledby="myModalLabel"
+                      aria-hidden="true"
                     >
-                      <i class="bi bi-geo-alt-fill"></i>
-                      IP City
-                    </h4>
-                  </div>
-                  <!-- Card Body -->
-                  <div class="container">
-                    <div class="row">
-                      <div class="col-md-12">
-                        <div class="table-responsive">
-                          <iframe
-                            src="https://ip.city/"
-                            frameborder="0"
-                            style="width: 100%; height: 70vh"
-                          ></iframe>
+                      <div
+                        class="modal-dialog modal-fullscreen"
+                        role="document"
+                      >
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <button
+                              type="button"
+                              class="close"
+                              data-dismiss="modal"
+                              aria-label="Close"
+                            >
+                              <span aria-hidden="true">&times;</span>
+                            </button>
+                          </div>
+                          <div class="modal-body">
+                            <iframe
+                              src="https://devrant.com/"
+                              frameborder="0"
+                              style="width: 100%; height: 70vh"
+                            ></iframe>
+                          </div>
                         </div>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
-
-			  
-				<!--  Crypto Live Values -->
-				<div class="col-xl-6 col-lg-4">
-				  <div
-					class="card shadow mb-4"
-					style="
-					  background-image: linear-gradient(
-						to bottom right,
-						#ecd6cb,
-						#fbfbfb,
-						#e1c1c1 90%
-					  );
-					"
-				  >
-					<!-- Card Header - Dropdown -->
-					<div
-					  class="card-header py-3 d-flex flex-row align-items-center justify-content-between"
-					>
-					  <h4
-						class="m-0 font-weight-bold text-primary text-uppercase"
-					  >
-					  <i class="bi bi-graph-up-arrow"></i>
-						Graph Online
-					  </h4>
-					</div>
-					<!-- Card Body -->
-					<div class="container">
-					  <div class="row">
-						<div class="col-md-12">
-						  <div class="table-responsive">
-							<iframe
-							  src="https://graphonline.ru/en/"
-							  frameborder="0"
-							  style="width: 100%; height: 70vh"
-							></iframe>
-						  </div>
-						</div>
-					  </div>
-					</div>
-				  </div>
-				</div>
-
-
-
             </div>
-          </div>
-          <!-- /.container-fluid -->
-        </div>
-        <!-- End of Main Content -->
-      </div>
-      <!-- End of Content Wrapper -->
-    </div>
-    <!-- End of Page Wrapper -->
+            <!-- /////////////////////////////////////////////// -->
 
+            <!-- learn-anything Tutorial -->
+            <div class="col-xl-3 col-md-6 mb-4">
+              <div class="card border-left-success shadow h-100 py-2 success">
+                <div
+                  class="card-body"
+                  data-toggle="modal"
+                  data-target="#myModal_learn-anything"
+                >
+                  <div class="row no-gutters align-items-center">
+                    <div class="col mr-2">
+                      <div class="text-xs font-weight-bold text-uppercase mb-1">
+                        <h6>
+                          <i class="bi bi-journal-album"></i>
+                          learn-anything
+                        </h6>
+                      </div>
+                    </div>
+                    <!--  learn-anything -->
+                    <div
+                      class="modal fade"
+                      id="myModal_learn-anything"
+                      tabindex="-1"
+                      role="dialog"
+                      aria-labelledby="myModalLabel"
+                      aria-hidden="true"
+                    >
+                      <div
+                        class="modal-dialog modal-fullscreen"
+                        role="document"
+                      >
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <button
+                              type="button"
+                              class="close"
+                              data-dismiss="modal"
+                              aria-label="Close"
+                            >
+                              <span aria-hidden="true">&times;</span>
+                            </button>
+                          </div>
+                          <div class="modal-body">
+                            <iframe
+                              src="https://learn-anything.xyz/"
+                              frameborder="0"
+                              style="width: 100%; height: 70vh"
+                            ></iframe>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- /////////////////////////////////////////////// -->
+            <!-- learn-anything Tutorial -->
+            <div class="col-xl-3 col-md-6 mb-4">
+              <div class="card border-left-warning shadow h-100 py-2 warning">
+                <div
+                  class="card-body"
+                  data-toggle="modal"
+                  data-target="#myModal_coderanch"
+                >
+                  <div class="row no-gutters align-items-center">
+                    <div class="col mr-2">
+                      <div class="text-xs font-weight-bold text-uppercase mb-1">
+                        <h6><i class="bi bi-code-slash"></i> Coderanch</h6>
+                      </div>
+                    </div>
+                    <!--  learn-anything -->
+                    <div
+                      class="modal fade"
+                      id="myModal_coderanch"
+                      tabindex="-1"
+                      role="dialog"
+                      aria-labelledby="myModalLabel"
+                      aria-hidden="true"
+                    >
+                      <div
+                        class="modal-dialog modal-fullscreen"
+                        role="document"
+                      >
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <button
+                              type="button"
+                              class="close"
+                              data-dismiss="modal"
+                              aria-label="Close"
+                            >
+                              <span aria-hidden="true">&times;</span>
+                            </button>
+                          </div>
+                          <div class="modal-body">
+                            <iframe
+                              src="https://coderanch.com/"
+                              frameborder="0"
+                              style="width: 100%; height: 70vh"
+                            ></iframe>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- /////////////////////////////////////////////// -->
+            <!-- SQL Tutorial -->
+            <div class="col-xl-3 col-md-6 mb-4">
+              <div class="card border-left-primary shadow h-100 py-2 primary">
+                <div
+                  class="card-body"
+                  data-toggle="modal"
+                  data-target="#myModal_sql"
+                >
+                  <div class="row no-gutters align-items-center">
+                    <div class="col mr-2">
+                      <div class="text-xs font-weight-bold text-uppercase mb-1">
+                        <h6><i class="bi bi-filetype-sql"></i> SQL Tutorial</h6>
+                      </div>
+                    </div>
+                    <!--  SQL Tutorial Modal -->
+                    <div
+                      class="modal fade"
+                      id="myModal_sql"
+                      tabindex="-1"
+                      role="dialog"
+                      aria-labelledby="myModalLabel"
+                      aria-hidden="true"
+                    >
+                      <div
+                        class="modal-dialog modal-fullscreen"
+                        role="document"
+                      >
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <button
+                              type="button"
+                              class="close"
+                              data-dismiss="modal"
+                              aria-label="Close"
+                            >
+                              <span aria-hidden="true">&times;</span>
+                            </button>
+                          </div>
+                          <div class="modal-body">
+                            <iframe
+                              src="https://sqlzoo.net/wiki/SQL_Tutorial"
+                              frameborder="0"
+                              style="width: 100%; height: 70vh"
+                            ></iframe>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- /////////////////////////////////////////////// -->
+
+            <!-- up-for-grabs -->
+            <div class="col-xl-3 col-md-6 mb-4">
+              <div class="card border-left-warning shadow h-100 py-2 warning">
+                <div
+                  class="card-body"
+                  data-toggle="modal"
+                  data-target="#myModal_up-for-grabs"
+                >
+                  <div class="row no-gutters align-items-center">
+                    <div class="col mr-2">
+                      <div class="text-xs font-weight-bold text-uppercase mb-1">
+                        <h6><i class="bi bi-grip-vertical"></i>up-for-grabs</h6>
+                      </div>
+                    </div>
+                    <!--  up-for-grabs -->
+                    <div
+                      class="modal fade"
+                      id="myModal_up-for-grabs"
+                      tabindex="-1"
+                      role="dialog"
+                      aria-labelledby="myModalLabel"
+                      aria-hidden="true"
+                    >
+                      <div
+                        class="modal-dialog modal-fullscreen"
+                        role="document"
+                      >
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <button
+                              type="button"
+                              class="close"
+                              data-dismiss="modal"
+                              aria-label="Close"
+                            >
+                              <span aria-hidden="true">&times;</span>
+                            </button>
+                          </div>
+                          <div class="modal-body">
+                            <iframe
+                              src="https://up-for-grabs.net/#/"
+                              frameborder="0"
+                              style="width: 100%; height: 70vh"
+                            ></iframe>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- /////////////////////////////////////////////// -->
+            <!-- Regex Cross­word -->
+            <div class="col-xl-3 col-md-6 mb-4">
+              <div class="card border-left-primary shadow h-100 py-2 primary">
+                <div
+                  class="card-body"
+                  data-toggle="modal"
+                  data-target="#myModal_regexcrossword"
+                >
+                  <div class="row no-gutters align-items-center">
+                    <div class="col mr-2">
+                      <div class="text-xs font-weight-bold text-uppercase mb-1">
+                        <h6>
+                          <i class="bi bi-puzzle-fill"></i> Regex Cross­word
+                        </h6>
+                      </div>
+                    </div>
+                    <!--  regexcrossword -->
+                    <div
+                      class="modal fade"
+                      id="myModal_regexcrossword"
+                      tabindex="-1"
+                      role="dialog"
+                      aria-labelledby="myModalLabel"
+                      aria-hidden="true"
+                    >
+                      <div
+                        class="modal-dialog modal-fullscreen"
+                        role="document"
+                      >
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <button
+                              type="button"
+                              class="close"
+                              data-dismiss="modal"
+                              aria-label="Close"
+                            >
+                              <span aria-hidden="true">&times;</span>
+                            </button>
+                          </div>
+                          <div class="modal-body">
+                            <iframe
+                              src="https://regexcrossword.com/"
+                              frameborder="0"
+                              style="width: 100%; height: 70vh"
+                            ></iframe>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- /////////////////////////////////////////////// -->
+
+            <!-- algo-geeks -->
+            <div class="col-xl-3 col-md-6 mb-4">
+              <div class="card border-left-success shadow h-100 py-2 success">
+                <div
+                  class="card-body"
+                  data-toggle="modal"
+                  data-target="#myModal_algo-geeks"
+                >
+                  <div class="row no-gutters align-items-center">
+                    <div class="col mr-2">
+                      <div class="text-xs font-weight-bold text-uppercase mb-1">
+                        <h6>
+                          <i class="bi bi-google"></i>
+                          algo-geeks
+                        </h6>
+                      </div>
+                    </div>
+                    <!--  algo-geeks -->
+                    <div
+                      class="modal fade"
+                      id="myModal_algo-geeks"
+                      tabindex="-1"
+                      role="dialog"
+                      aria-labelledby="myModalLabel"
+                      aria-hidden="true"
+                    >
+                      <div
+                        class="modal-dialog modal-fullscreen"
+                        role="document"
+                      >
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <button
+                              type="button"
+                              class="close"
+                              data-dismiss="modal"
+                              aria-label="Close"
+                            >
+                              <span aria-hidden="true">&times;</span>
+                            </button>
+                          </div>
+                          <div class="modal-body">
+                            <!-- Card Header - Dropdown -->
+                            <div
+                              class="card-header py-3 d-flex flex-row align-items-center justify-content-between"
+                            >
+                              <h6
+                                class="m-0 font-weight-bold text-primary"
+                                id="month"
+                              ></h6>
+                            </div>
+                            <!-- Card Body -->
+                            <div class="modal-body">
+                              <iframe
+                                src="http://algo-geeks.blogspot.com/"
+                                frameborder="0"
+                                style="width: 100%; height: 70vh"
+                              ></iframe>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- /////////////////////////////////////////////// -->
+
+            <!-- apiDoc Making -->
+            <div class="col-xl-3 col-md-6 mb-4">
+              <div class="card border-left-primary shadow h-100 py-2 primary">
+                <div
+                  class="card-body"
+                  data-toggle="modal"
+                  data-target="#myModal_apiDoc"
+                >
+                  <div class="row no-gutters align-items-center">
+                    <div class="col mr-2">
+                      <div class="text-xs font-weight-bold text-uppercase mb-1">
+                        <h6>
+                          <i class="bi bi-file-earmark-richtext"></i>
+                          API Documentation
+                        </h6>
+                      </div>
+                    </div>
+                    <!--  Google Java Style Guide Modal -->
+                    <div
+                      class="modal fade"
+                      id="myModal_apiDoc"
+                      tabindex="-1"
+                      role="dialog"
+                      aria-labelledby="myModalLabel"
+                      aria-hidden="true"
+                    >
+                      <div
+                        class="modal-dialog modal-fullscreen"
+                        role="document"
+                      >
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <button
+                              type="button"
+                              class="close"
+                              data-dismiss="modal"
+                              aria-label="Close"
+                            >
+                              <span aria-hidden="true">&times;</span>
+                            </button>
+                          </div>
+                          <div class="modal-body">
+                            <!-- Card Header - Dropdown -->
+                            <div
+                              class="card-header py-3 d-flex flex-row align-items-center justify-content-between"
+                            >
+                              <h6
+                                class="m-0 font-weight-bold text-primary"
+                                id="month"
+                              ></h6>
+                            </div>
+                            <!-- Card Body -->
+                            <div class="modal-body">
+                              <iframe
+                                src="https://devdocs.io/"
+                                frameborder="0"
+                                style="width: 100%; height: 70vh"
+                              ></iframe>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- /////////////////////////////////////////////// -->
+            <!-- n-o-d-e  -->
+            <div class="col-xl-3 col-md-6 mb-4">
+              <div class="card border-left-primary shadow h-100 py-2 primary">
+                <div
+                  class="card-body"
+                  data-toggle="modal"
+                  data-target="#myModal_n-o-d-e"
+                >
+                  <div class="row no-gutters align-items-center">
+                    <div class="col mr-2">
+                      <div class="text-xs font-weight-bold text-uppercase mb-1">
+                        <h6><i class="bi bi-diagram-2"></i> n-o-d-e</h6>
+                      </div>
+                    </div>
+                    <!--  n-o-d-e -->
+                    <div
+                      class="modal fade"
+                      id="myModal_n-o-d-e"
+                      tabindex="-1"
+                      role="dialog"
+                      aria-labelledby="myModalLabel"
+                      aria-hidden="true"
+                    >
+                      <div
+                        class="modal-dialog modal-fullscreen"
+                        role="document"
+                      >
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <button
+                              type="button"
+                              class="close"
+                              data-dismiss="modal"
+                              aria-label="Close"
+                            >
+                              <span aria-hidden="true">&times;</span>
+                            </button>
+                          </div>
+                          <div class="modal-body">
+                            <iframe
+                              src="https://n-o-d-e.net/"
+                              frameborder="0"
+                              style="width: 100%; height: 70vh"
+                            ></iframe>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- /////////////////////////////////////////////// -->
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 3rd Accordion END -->
+
+    <!-- 4th Accordion START -->
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="headingFour">
+        <button
+          class="accordion-button collapsed"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#collapseFour"
+          aria-expanded="false"
+          aria-controls="collapseFour"
+        >
+         Google Style Guides
+        </button>
+      </h2>
+      <div
+        id="collapseFour"
+        class="accordion-collapse collapse"
+        aria-labelledby="headingFour"
+        data-bs-parent="#accordionExample"
+      >
+        <div class="accordion-body">
+          <!-- Content Row -->
+          <div class="row">
+            
+
+            <!-- GoogleCode -->
+            <div class="col-xl-3 col-md-6 mb-4">
+              <div class="card border-left-danger shadow h-100 py-2 danger">
+                <div
+                  class="card-body"
+                  data-toggle="modal"
+                  data-target="#myModal_GoogleCode"
+                >
+                  <div class="row no-gutters align-items-center">
+                    <div class="col mr-2">
+                      <div class="text-xs font-weight-bold text-uppercase mb-1">
+                        <h6>
+                          <i class="bi bi-google"></i>
+                          Google Code
+                        </h6>
+                      </div>
+                    </div>
+                    <!--  Google Code -->
+                    <div
+                      class="modal fade"
+                      id="myModal_GoogleCode"
+                      tabindex="-1"
+                      role="dialog"
+                      aria-labelledby="myModalLabel"
+                      aria-hidden="true"
+                    >
+                      <div
+                        class="modal-dialog modal-fullscreen"
+                        role="document"
+                      >
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <button
+                              type="button"
+                              class="close"
+                              data-dismiss="modal"
+                              aria-label="Close"
+                            >
+                              <span aria-hidden="true">&times;</span>
+                            </button>
+                          </div>
+                          <div class="modal-body">
+                            <iframe
+                              src="https://code.google.com/projecthosting"
+                              frameborder="0"
+                              style="width: 100%; height: 70vh"
+                            ></iframe>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- /////////////////////////////////////////////// -->
+
+            <!-- angularjs -->
+            <div class="col-xl-3 col-md-6 mb-4">
+              <div class="card border-left-warning shadow h-100 py-2 warning">
+                <div
+                  class="card-body"
+                  data-toggle="modal"
+                  data-target="#myModal_angularjs"
+                >
+                  <div class="row no-gutters align-items-center">
+                    <div class="col mr-2">
+                      <div class="text-xs font-weight-bold text-uppercase mb-1">
+                        <h6>
+                          <i class="bi bi-caret-up"></i>
+                          Google angularjs Style Guide
+                        </h6>
+                      </div>
+                    </div>
+                    <!--  angularjs-->
+                    <div
+                      class="modal fade"
+                      id="myModal_angularjs"
+                      tabindex="-1"
+                      role="dialog"
+                      aria-labelledby="myModalLabel"
+                      aria-hidden="true"
+                    >
+                      <div
+                        class="modal-dialog modal-fullscreen"
+                        role="document"
+                      >
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <button
+                              type="button"
+                              class="close"
+                              data-dismiss="modal"
+                              aria-label="Close"
+                            >
+                              <span aria-hidden="true">&times;</span>
+                            </button>
+                          </div>
+                          <div class="modal-body">
+                            <!-- Card Header - Dropdown -->
+                            <div
+                              class="card-header py-3 d-flex flex-row align-items-center justify-content-between"
+                            >
+                              <h6
+                                class="m-0 font-weight-bold text-primary"
+                                id="month"
+                              ></h6>
+                            </div>
+                            <!-- Card Body -->
+                            <div class="modal-body">
+                              <iframe
+                                src="https://google.github.io/styleguide/angularjs-google-style.html"
+                                frameborder="0"
+                                style="width: 100%; height: 70vh"
+                              ></iframe>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- /////////////////////////////////////////////// -->
+
+
+            <!-- Google Java Style Guide Making -->
+            <div class="col-xl-3 col-md-6 mb-4">
+              <div class="card border-left-success shadow h-100 py-2 success">
+                <div
+                  class="card-body"
+                  data-toggle="modal"
+                  data-target="#myModal_google"
+                >
+                  <div class="row no-gutters align-items-center">
+                    <div class="col mr-2">
+                      <div class="text-xs font-weight-bold text-uppercase mb-1">
+                        <h6>
+                          <i class="bi bi-filetype-java"></i>
+                          Google Java Style Guide
+                        </h6>
+                      </div>
+                    </div>
+                    <!--  Google Java Style Guide Modal -->
+                    <div
+                      class="modal fade"
+                      id="myModal_google"
+                      tabindex="-1"
+                      role="dialog"
+                      aria-labelledby="myModalLabel"
+                      aria-hidden="true"
+                    >
+                      <div
+                        class="modal-dialog modal-fullscreen"
+                        role="document"
+                      >
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <button
+                              type="button"
+                              class="close"
+                              data-dismiss="modal"
+                              aria-label="Close"
+                            >
+                              <span aria-hidden="true">&times;</span>
+                            </button>
+                          </div>
+                          <div class="modal-body">
+                            <!-- Card Header - Dropdown -->
+                            <div
+                              class="card-header py-3 d-flex flex-row align-items-center justify-content-between"
+                            >
+                              <h6
+                                class="m-0 font-weight-bold text-primary"
+                                id="month"
+                              ></h6>
+                            </div>
+                            <!-- Card Body -->
+                            <div class="modal-body">
+                              <iframe
+                                src="https://google.github.io/styleguide/javaguide.html"
+                                frameborder="0"
+                                style="width: 100%; height: 70vh"
+                              ></iframe>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- /////////////////////////////////////////////// -->
+
+            <!-- Google Java Style Guide Making -->
+            <div class="col-xl-3 col-md-6 mb-4">
+              <div class="card border-left-primary shadow h-100 py-2 primary">
+                <div
+                  class="card-body"
+                  data-toggle="modal"
+                  data-target="#myModal_googleC"
+                >
+                  <div class="row no-gutters align-items-center">
+                    <div class="col mr-2">
+                      <div class="text-xs font-weight-bold text-uppercase mb-1">
+                        <h6>
+                          <i class="bi bi-c-square"></i>
+                          Google C# Style Guide
+                        </h6>
+                      </div>
+                    </div>
+                    <!--  Google Java Style Guide Modal -->
+                    <div
+                      class="modal fade"
+                      id="myModal_googleC"
+                      tabindex="-1"
+                      role="dialog"
+                      aria-labelledby="myModalLabel"
+                      aria-hidden="true"
+                    >
+                      <div
+                        class="modal-dialog modal-fullscreen"
+                        role="document"
+                      >
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <button
+                              type="button"
+                              class="close"
+                              data-dismiss="modal"
+                              aria-label="Close"
+                            >
+                              <span aria-hidden="true">&times;</span>
+                            </button>
+                          </div>
+                          <div class="modal-body">
+                            <!-- Card Header - Dropdown -->
+                            <div
+                              class="card-header py-3 d-flex flex-row align-items-center justify-content-between"
+                            >
+                              <h6
+                                class="m-0 font-weight-bold text-primary"
+                                id="month"
+                              ></h6>
+                            </div>
+                            <!-- Card Body -->
+                            <div class="modal-body">
+                              <iframe
+                                src="https://google.github.io/styleguide/csharp-style.html"
+                                frameborder="0"
+                                style="width: 100%; height: 70vh"
+                              ></iframe>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- /////////////////////////////////////////////// -->
+
+
+
+
+
+
+
+
+
+             <!-- \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ -->
+             <div class="col-xl-3 col-md-6 mb-4">
+              <div class="card border-left-danger shadow h-100 py-2 danger">
+                <div
+                  class="card-body"
+                  data-toggle="modal"
+                  data-target="#myModal_lispguide"
+                >
+                  <div class="row no-gutters align-items-center">
+                    <div class="col mr-2">
+                      <div class="text-xs font-weight-bold text-uppercase mb-1">
+                        <h6>
+                          <i class="bi bi-google"></i>
+                          Google Common Lisp Style Guide
+                        </h6>
+                      </div>
+                    </div>
+                    
+                    <div
+                      class="modal fade"
+                      id="myModal_lispguide"
+                      tabindex="-1"
+                      role="dialog"
+                      aria-labelledby="myModalLabel"
+                      aria-hidden="true"
+                    >
+                      <div
+                        class="modal-dialog modal-fullscreen"
+                        role="document"
+                      >
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <button
+                              type="button"
+                              class="close"
+                              data-dismiss="modal"
+                              aria-label="Close"
+                            >
+                              <span aria-hidden="true">&times;</span>
+                            </button>
+                          </div>
+                          <div class="modal-body">
+                            <iframe
+                              src="https://google.github.io/styleguide/lispguide.xml"
+                              frameborder="0"
+                              style="width: 100%; height: 70vh"
+                            ></iframe>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- /////////////////////////////////////////////// -->
+
+            
+            <div class="col-xl-3 col-md-6 mb-4">
+              <div class="card border-left-warning shadow h-100 py-2 warning">
+                <div
+                  class="card-body"
+                  data-toggle="modal"
+                  data-target="#myModal_htmlcssguide"
+                >
+                  <div class="row no-gutters align-items-center">
+                    <div class="col mr-2">
+                      <div class="text-xs font-weight-bold text-uppercase mb-1">
+                        <h6>
+                          <i class="bi bi-filetype-html"></i><i class="bi bi-filetype-css"></i>
+                          Google html/css Style Guide
+                        </h6>
+                      </div>
+                    </div>
+                 
+                    <div
+                      class="modal fade"
+                      id="myModal_htmlcssguide"
+                      tabindex="-1"
+                      role="dialog"
+                      aria-labelledby="myModalLabel"
+                      aria-hidden="true"
+                    >
+                      <div
+                        class="modal-dialog modal-fullscreen"
+                        role="document"
+                      >
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <button
+                              type="button"
+                              class="close"
+                              data-dismiss="modal"
+                              aria-label="Close"
+                            >
+                              <span aria-hidden="true">&times;</span>
+                            </button>
+                          </div>
+                          <div class="modal-body">
+                            <!-- Card Header - Dropdown -->
+                            <div
+                              class="card-header py-3 d-flex flex-row align-items-center justify-content-between"
+                            >
+                              <h6
+                                class="m-0 font-weight-bold text-primary"
+                                id="month"
+                              ></h6>
+                            </div>
+                            <!-- Card Body -->
+                            <div class="modal-body">
+                              <iframe
+                                src="https://google.github.io/styleguide/htmlcssguide.html"
+                                frameborder="0"
+                                style="width: 100%; height: 70vh"
+                              ></iframe>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- /////////////////////////////////////////////// -->
+            
+            <div class="col-xl-3 col-md-6 mb-4">
+              <div class="card border-left-success shadow h-100 py-2 success">
+                <div
+                  class="card-body"
+                  data-toggle="modal"
+                  data-target="#myModal_go"
+                >
+                  <div class="row no-gutters align-items-center">
+                    <div class="col mr-2">
+                      <div class="text-xs font-weight-bold text-uppercase mb-1">
+                        <h6>
+                          <i class="bi bi-pentagon"></i>
+                          Google Go Style Guide
+                        </h6>
+                      </div>
+                    </div>
+                  
+                    <div
+                      class="modal fade"
+                      id="myModal_go"
+                      tabindex="-1"
+                      role="dialog"
+                      aria-labelledby="myModalLabel"
+                      aria-hidden="true"
+                    >
+                      <div
+                        class="modal-dialog modal-fullscreen"
+                        role="document"
+                      >
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <button
+                              type="button"
+                              class="close"
+                              data-dismiss="modal"
+                              aria-label="Close"
+                            >
+                              <span aria-hidden="true">&times;</span>
+                            </button>
+                          </div>
+                          <div class="modal-body">
+                            <!-- Card Header - Dropdown -->
+                            <div
+                              class="card-header py-3 d-flex flex-row align-items-center justify-content-between"
+                            >
+                              <h6
+                                class="m-0 font-weight-bold text-primary"
+                                id="month"
+                              ></h6>
+                            </div>
+                            <!-- Card Body -->
+                            <div class="modal-body">
+                              <iframe
+                                src="https://google.github.io/styleguide/go/"
+                                frameborder="0"
+                                style="width: 100%; height: 70vh"
+                              ></iframe>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- /////////////////////////////////////////////// -->
+
+            
+            <div class="col-xl-3 col-md-6 mb-4">
+              <div class="card border-left-primary shadow h-100 py-2 primary">
+                <div
+                  class="card-body"
+                  data-toggle="modal"
+                  data-target="#myModal_cppguide"
+                >
+                  <div class="row no-gutters align-items-center">
+                    <div class="col mr-2">
+                      <div class="text-xs font-weight-bold text-uppercase mb-1">
+                        <h6>
+                          <i class="bi bi-c-square"></i>
+                          Google C++ Style Guide
+                        </h6>
+                      </div>
+                    </div>
+                    
+                    <div
+                      class="modal fade"
+                      id="myModal_cppguide"
+                      tabindex="-1"
+                      role="dialog"
+                      aria-labelledby="myModalLabel"
+                      aria-hidden="true"
+                    >
+                      <div
+                        class="modal-dialog modal-fullscreen"
+                        role="document"
+                      >
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <button
+                              type="button"
+                              class="close"
+                              data-dismiss="modal"
+                              aria-label="Close"
+                            >
+                              <span aria-hidden="true">&times;</span>
+                            </button>
+                          </div>
+                          <div class="modal-body">
+                            <!-- Card Header - Dropdown -->
+                            <div
+                              class="card-header py-3 d-flex flex-row align-items-center justify-content-between"
+                            >
+                              <h6
+                                class="m-0 font-weight-bold text-primary"
+                                id="month"
+                              ></h6>
+                            </div>
+                            <!-- Card Body -->
+                            <div class="modal-body">
+                              <iframe
+                                src="https://google.github.io/styleguide/cppguide.html"
+                                frameborder="0"
+                                style="width: 100%; height: 70vh"
+                              ></iframe>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- /////////////////////////////////////////////// -->
+         
+            <!-- \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ -->
+            <div class="col-xl-3 col-md-6 mb-4">
+              <div class="card border-left-danger shadow h-100 py-2 danger">
+                <div
+                  class="card-body"
+                  data-toggle="modal"
+                  data-target="#myModal_Rguide"
+                >
+                  <div class="row no-gutters align-items-center">
+                    <div class="col mr-2">
+                      <div class="text-xs font-weight-bold text-uppercase mb-1">
+                        <h6>
+                          <i class="bi bi-filetype-rb"></i>
+                          Google’s R Style Guide
+                        </h6>
+                      </div>
+                    </div>
+                    
+                    <div
+                      class="modal fade"
+                      id="myModal_Rguide"
+                      tabindex="-1"
+                      role="dialog"
+                      aria-labelledby="myModalLabel"
+                      aria-hidden="true"
+                    >
+                      <div
+                        class="modal-dialog modal-fullscreen"
+                        role="document"
+                      >
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <button
+                              type="button"
+                              class="close"
+                              data-dismiss="modal"
+                              aria-label="Close"
+                            >
+                              <span aria-hidden="true">&times;</span>
+                            </button>
+                          </div>
+                          <div class="modal-body">
+                            <iframe
+                              src="https://google.github.io/styleguide/Rguide.html"
+                              frameborder="0"
+                              style="width: 100%; height: 70vh"
+                            ></iframe>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- /////////////////////////////////////////////// -->
+            <div class="col-xl-3 col-md-6 mb-4">
+              <div class="card border-left-warning shadow h-100 py-2 warning">
+                <div
+                  class="card-body"
+                  data-toggle="modal"
+                  data-target="#myModal_jsguide"
+                >
+                  <div class="row no-gutters align-items-center">
+                    <div class="col mr-2">
+                      <div class="text-xs font-weight-bold text-uppercase mb-1">
+                        <h6>
+                          <i class="bi bi-filetype-js"></i>
+                          Google JavaScript Style Guide
+                        </h6>
+                      </div>
+                    </div>
+                 
+                    <div
+                      class="modal fade"
+                      id="myModal_jsguide"
+                      tabindex="-1"
+                      role="dialog"
+                      aria-labelledby="myModalLabel"
+                      aria-hidden="true"
+                    >
+                      <div
+                        class="modal-dialog modal-fullscreen"
+                        role="document"
+                      >
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <button
+                              type="button"
+                              class="close"
+                              data-dismiss="modal"
+                              aria-label="Close"
+                            >
+                              <span aria-hidden="true">&times;</span>
+                            </button>
+                          </div>
+                          <div class="modal-body">
+                            <!-- Card Header - Dropdown -->
+                            <div
+                              class="card-header py-3 d-flex flex-row align-items-center justify-content-between"
+                            >
+                              <h6
+                                class="m-0 font-weight-bold text-primary"
+                                id="month"
+                              ></h6>
+                            </div>
+                            <!-- Card Body -->
+                            <div class="modal-body">
+                              <iframe
+                                src="https://google.github.io/styleguide/jsguide.html"
+                                frameborder="0"
+                                style="width: 100%; height: 70vh"
+                              ></iframe>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- /////////////////////////////////////////////// -->
+            
+            <div class="col-xl-3 col-md-6 mb-4">
+              <div class="card border-left-success shadow h-100 py-2 success">
+                <div
+                  class="card-body"
+                  data-toggle="modal"
+                  data-target="#myModal_pyguide"
+                >
+                  <div class="row no-gutters align-items-center">
+                    <div class="col mr-2">
+                      <div class="text-xs font-weight-bold text-uppercase mb-1">
+                        <h6>
+                          <i class="bi bi-filetype-py"></i>
+                          Google Python Style Guide
+                        </h6>
+                      </div>
+                    </div>
+                  
+                    <div
+                      class="modal fade"
+                      id="myModal_pyguide"
+                      tabindex="-1"
+                      role="dialog"
+                      aria-labelledby="myModalLabel"
+                      aria-hidden="true"
+                    >
+                      <div
+                        class="modal-dialog modal-fullscreen"
+                        role="document"
+                      >
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <button
+                              type="button"
+                              class="close"
+                              data-dismiss="modal"
+                              aria-label="Close"
+                            >
+                              <span aria-hidden="true">&times;</span>
+                            </button>
+                          </div>
+                          <div class="modal-body">
+                            <!-- Card Header - Dropdown -->
+                            <div
+                              class="card-header py-3 d-flex flex-row align-items-center justify-content-between"
+                            >
+                              <h6
+                                class="m-0 font-weight-bold text-primary"
+                                id="month"
+                              ></h6>
+                            </div>
+                            <!-- Card Body -->
+                            <div class="modal-body">
+                              <iframe
+                                src="https://google.github.io/styleguide/pyguide.html"
+                                frameborder="0"
+                                style="width: 100%; height: 70vh"
+                              ></iframe>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- /////////////////////////////////////////////// -->
+
+            
+            <div class="col-xl-3 col-md-6 mb-4">
+              <div class="card border-left-primary shadow h-100 py-2 primary">
+                <div
+                  class="card-body"
+                  data-toggle="modal"
+                  data-target="#myModal_objcguide"
+                >
+                  <div class="row no-gutters align-items-center">
+                    <div class="col mr-2">
+                      <div class="text-xs font-weight-bold text-uppercase mb-1">
+                        <h6>
+                          <i class="bi bi-c-square"></i>
+                          Google Objective-C Style Guide
+                        </h6>
+                      </div>
+                    </div>
+                    
+                    <div
+                      class="modal fade"
+                      id="myModal_objcguide"
+                      tabindex="-1"
+                      role="dialog"
+                      aria-labelledby="myModalLabel"
+                      aria-hidden="true"
+                    >
+                      <div
+                        class="modal-dialog modal-fullscreen"
+                        role="document"
+                      >
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <button
+                              type="button"
+                              class="close"
+                              data-dismiss="modal"
+                              aria-label="Close"
+                            >
+                              <span aria-hidden="true">&times;</span>
+                            </button>
+                          </div>
+                          <div class="modal-body">
+                            <!-- Card Header - Dropdown -->
+                            <div
+                              class="card-header py-3 d-flex flex-row align-items-center justify-content-between"
+                            >
+                              <h6
+                                class="m-0 font-weight-bold text-primary"
+                                id="month"
+                              ></h6>
+                            </div>
+                            <!-- Card Body -->
+                            <div class="modal-body">
+                              <iframe
+                                src="https://google.github.io/styleguide/objcguide.html"
+                                frameborder="0"
+                                style="width: 100%; height: 70vh"
+                              ></iframe>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- /////////////////////////////////////////////// -->
+
+            <!-- \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ -->
+            <div class="col-xl-3 col-md-6 mb-4">
+              <div class="card border-left-danger shadow h-100 py-2 danger">
+                <div
+                  class="card-body"
+                  data-toggle="modal"
+                  data-target="#myModal_vimscriptguide"
+                >
+                  <div class="row no-gutters align-items-center">
+                    <div class="col mr-2">
+                      <div class="text-xs font-weight-bold text-uppercase mb-1">
+                        <h6>
+                          <i class="bi bi-vimeo"></i>
+                          Google Vimscript Style Guide
+                        </h6>
+                      </div>
+                    </div>
+                    
+                    <div
+                      class="modal fade"
+                      id="myModal_vimscriptguide"
+                      tabindex="-1"
+                      role="dialog"
+                      aria-labelledby="myModalLabel"
+                      aria-hidden="true"
+                    >
+                      <div
+                        class="modal-dialog modal-fullscreen"
+                        role="document"
+                      >
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <button
+                              type="button"
+                              class="close"
+                              data-dismiss="modal"
+                              aria-label="Close"
+                            >
+                              <span aria-hidden="true">&times;</span>
+                            </button>
+                          </div>
+                          <div class="modal-body">
+                            <iframe
+                              src="https://google.github.io/styleguide/vimscriptguide.xml"
+                              frameborder="0"
+                              style="width: 100%; height: 70vh"
+                            ></iframe>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- /////////////////////////////////////////////// -->
+            <div class="col-xl-3 col-md-6 mb-4">
+              <div class="card border-left-warning shadow h-100 py-2 warning">
+                <div
+                  class="card-body"
+                  data-toggle="modal"
+                  data-target="#myModal_tsguide"
+                >
+                  <div class="row no-gutters align-items-center">
+                    <div class="col mr-2">
+                      <div class="text-xs font-weight-bold text-uppercase mb-1">
+                        <h6>
+                          <i class="bi bi-filetype-tsx"></i>
+                          Google TypeScript Style Guide
+                        </h6>
+                      </div>
+                    </div>
+                 
+                    <div
+                      class="modal fade"
+                      id="myModal_tsguide"
+                      tabindex="-1"
+                      role="dialog"
+                      aria-labelledby="myModalLabel"
+                      aria-hidden="true"
+                    >
+                      <div
+                        class="modal-dialog modal-fullscreen"
+                        role="document"
+                      >
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <button
+                              type="button"
+                              class="close"
+                              data-dismiss="modal"
+                              aria-label="Close"
+                            >
+                              <span aria-hidden="true">&times;</span>
+                            </button>
+                          </div>
+                          <div class="modal-body">
+                            <!-- Card Header - Dropdown -->
+                            <div
+                              class="card-header py-3 d-flex flex-row align-items-center justify-content-between"
+                            >
+                              <h6
+                                class="m-0 font-weight-bold text-primary"
+                                id="month"
+                              ></h6>
+                            </div>
+                            <!-- Card Body -->
+                            <div class="modal-body">
+                              <iframe
+                                src="https://google.github.io/styleguide/tsguide.html"
+                                frameborder="0"
+                                style="width: 100%; height: 70vh"
+                              ></iframe>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- /////////////////////////////////////////////// -->
+            
+            <div class="col-xl-3 col-md-6 mb-4">
+              <div class="card border-left-success shadow h-100 py-2 success">
+                <div
+                  class="card-body"
+                  data-toggle="modal"
+                  data-target="#myModal_swift"
+                >
+                  <div class="row no-gutters align-items-center">
+                    <div class="col mr-2">
+                      <div class="text-xs font-weight-bold text-uppercase mb-1">
+                        <h6>
+                          <i class="bi bi-apple"></i>
+                          Google Swift Style Guide
+                        </h6>
+                      </div>
+                    </div>
+                  
+                    <div
+                      class="modal fade"
+                      id="myModal_swift"
+                      tabindex="-1"
+                      role="dialog"
+                      aria-labelledby="myModalLabel"
+                      aria-hidden="true"
+                    >
+                      <div
+                        class="modal-dialog modal-fullscreen"
+                        role="document"
+                      >
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <button
+                              type="button"
+                              class="close"
+                              data-dismiss="modal"
+                              aria-label="Close"
+                            >
+                              <span aria-hidden="true">&times;</span>
+                            </button>
+                          </div>
+                          <div class="modal-body">
+                            <!-- Card Header - Dropdown -->
+                            <div
+                              class="card-header py-3 d-flex flex-row align-items-center justify-content-between"
+                            >
+                              <h6
+                                class="m-0 font-weight-bold text-primary"
+                                id="month"
+                              ></h6>
+                            </div>
+                            <!-- Card Body -->
+                            <div class="modal-body">
+                              <iframe
+                                src="https://google.github.io/swift/"
+                                frameborder="0"
+                                style="width: 100%; height: 70vh"
+                              ></iframe>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- /////////////////////////////////////////////// -->
+
+            
+            <div class="col-xl-3 col-md-6 mb-4">
+              <div class="card border-left-primary shadow h-100 py-2 primary">
+                <div
+                  class="card-body"
+                  data-toggle="modal"
+                  data-target="#myModal_shellguide"
+                >
+                  <div class="row no-gutters align-items-center">
+                    <div class="col mr-2">
+                      <div class="text-xs font-weight-bold text-uppercase mb-1">
+                        <h6>
+                          <i class="bi bi-filetype-sh"></i>
+                          Google Shell Style Guide
+                        </h6>
+                      </div>
+                    </div>
+                    
+                    <div
+                      class="modal fade"
+                      id="myModal_shellguide"
+                      tabindex="-1"
+                      role="dialog"
+                      aria-labelledby="myModalLabel"
+                      aria-hidden="true"
+                    >
+                      <div
+                        class="modal-dialog modal-fullscreen"
+                        role="document"
+                      >
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <button
+                              type="button"
+                              class="close"
+                              data-dismiss="modal"
+                              aria-label="Close"
+                            >
+                              <span aria-hidden="true">&times;</span>
+                            </button>
+                          </div>
+                          <div class="modal-body">
+                            <!-- Card Header - Dropdown -->
+                            <div
+                              class="card-header py-3 d-flex flex-row align-items-center justify-content-between"
+                            >
+                              <h6
+                                class="m-0 font-weight-bold text-primary"
+                                id="month"
+                              ></h6>
+                            </div>
+                            <!-- Card Body -->
+                            <div class="modal-body">
+                              <iframe
+                                src="https://google.github.io/styleguide/shellguide.html"
+                                frameborder="0"
+                                style="width: 100%; height: 70vh"
+                              ></iframe>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- /////////////////////////////////////////////// -->
+            
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 4th Accordion END -->
+
+    <!-- JS Code -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
