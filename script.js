@@ -18,46 +18,49 @@ function updateCryptoValues(country) {
       currencySymbol = "";
   }
   $.getJSON(
-    "https://min-api.cryptocompare.com/data/top/totalvolfull?limit=10&tsym=" +
-      country,
+    "https://api.coingecko.com/api/v3/coins/markets?vs_currency=" +
+      country +
+      "&order=market_cap_desc&per_page=10&page=1&sparkline=false",
     function (data) {
       var cryptoValuesHtml = "";
-      for (var i = 0; i < data.Data.length; i++) {
-        var crypto = data.Data[i];
+      for (var i = 0; i < data.length; i++) {
+        var crypto = data[i];
         cryptoValuesHtml += "<tr>";
         cryptoValuesHtml +=
           "<td>" +
-          crypto.CoinInfo.FullName +
+          crypto.name +
           " (" +
-          crypto.CoinInfo.Name +
+          crypto.symbol.toUpperCase() +
           ")</td>";
         cryptoValuesHtml +=
           "<td>" +
           currencySymbol +
-          crypto.RAW[country].PRICE.toLocaleString() +
+          crypto.current_price.toLocaleString() +
           "</td>";
         cryptoValuesHtml +=
           "<td>" +
           currencySymbol +
-          crypto.RAW[country].MKTCAP.toLocaleString() +
+          crypto.market_cap.toLocaleString() +
           "</td>";
         cryptoValuesHtml +=
           "<td>" +
           currencySymbol +
-          crypto.RAW[country].VOLUME24HOUR.toLocaleString() +
+          crypto.total_volume.toLocaleString() +
           "</td>";
         cryptoValuesHtml +=
           "<td>" +
-          crypto.RAW[country].SUPPLY.toLocaleString() +
+          crypto.circulating_supply.toLocaleString() +
           " " +
-          crypto.CoinInfo.Name +
+          crypto.symbol.toUpperCase() +
           "</td>";
         cryptoValuesHtml += "</tr>";
       }
       $("#crypto-values").html(cryptoValuesHtml);
     }
   );
-} // Event listener to update crypto values whenever the selected country changes
+}
+
+// Event listener to update crypto values whenever the selected country changes
 $("#country").change(function () {
   var country = $(this).val();
   updateCryptoValues(country);
@@ -65,6 +68,7 @@ $("#country").change(function () {
 
 // Initial update with the default selected country (USD)
 updateCryptoValues("USD");
+
 
 // Get the current month and year///////////////////////////////////////////////////////////////////////////
 var today = new Date();
