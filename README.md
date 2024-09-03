@@ -1,3 +1,3 @@
 # dashboard
 
-![wallpaper](https://user-images.githubusercontent.com/85184261/229153529-3aceba1c-35a6-48f1-8e60-941170121f25.png)
+![wallpaper v2](https://github.com/user-attachments/assets/eb5038a8-525f-43c8-a6e8-54158aa8c3d9)
